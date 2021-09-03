@@ -15,6 +15,7 @@ public class sensorInputs {
         sensorDataValues.trafficSensorInfo = getTrafficSensorInfo();
         sensorDataValues.humanActivity = getHumanActivity();
         sensorDataValues.noiseLevels = getNoiseLevelsDB();
+        sensorDataValues.driverExperience = getDriverExperience();
         return(sensorDataValues);
     }
 
@@ -30,7 +31,7 @@ public class sensorInputs {
 
     //Get current weather conditions.
     private String getWeatherConditions(){
-        return "Sunny";
+        return "Fog";
     }
 
     //Get current traffic intensity.
@@ -44,7 +45,7 @@ public class sensorInputs {
         currentSensorInfo[4] = true;
         return (currentSensorInfo);
     }
-
+    private String getDriverExperience(){ return "High"; }
     //Get the current human activity.
     private String getHumanActivity(){
         return "Phone";
@@ -52,6 +53,6 @@ public class sensorInputs {
 
     //Get the current noise levels.
     private int getNoiseLevelsDB(){
-        return 60;
+        return 81;
     }
 }

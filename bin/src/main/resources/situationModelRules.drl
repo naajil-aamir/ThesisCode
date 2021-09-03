@@ -1,0 +1,14 @@
+import org.TOC.Naajil.situationModel
+
+rule "Rule For Rainy Weather"
+	when
+		situationObject: situationModel( weatherConditions == "Rainy")
+	then
+		situationObject.reduceSightAvailability(10);
+	end
+rule "Rule For Sunny Weather"
+	when
+		situationObject: situationModel( weatherConditions == "Sunny")
+	then
+		situationObject.reduceSightAvailability(0);
+	end

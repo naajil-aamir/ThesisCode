@@ -12,10 +12,17 @@ import java.io.InputStreamReader;
 import java.io.Reader;
 
 public class situationModel {
-    private humanSenses sensesAvailability = new humanSenses();
-    private double frictionCoefficient;
-    private int timeToSituationalAwareness;
-    private Boolean[][] trafficMap;
+    public humanSenses sensesAvailability = new humanSenses();
+    public double frictionCoefficient;
+    public int timeToSituationalAwareness;
+    public Boolean[][] trafficMap;
+    public int speed;
+    public int distanceToObstacle;
+    public String weatherConditions;
+    public String trafficIntensity;
+    public String humanActivity;
+    public int noiseLevels;
+    situationModel(){};
     situationModel(sensorData currentSensorValues){
         sensesAvailability.sight = 100;
         sensesAvailability.hearing = 100;
@@ -23,16 +30,44 @@ public class situationModel {
         frictionCoefficient = 0.6;
         timeToSituationalAwareness = 6;
         createTrafficMap(currentSensorValues.trafficSensorInfo);
+        speed = currentSensorValues.speed;
+        distanceToObstacle = currentSensorValues.distanceToObstacle;
+        weatherConditions = currentSensorValues.weatherConditions;
+        humanActivity = currentSensorValues.humanActivity;
+        noiseLevels = currentSensorValues.noiseLevels;
+        trafficIntensity = currentSensorValues.trafficIntensity;
     }
     private void createTrafficMap(Boolean[] traficSensorInfo){
         trafficMap = new Boolean[3][3];
         for(int i=0; i< traficSensorInfo.length;i++){
             trafficMap[i/3][i%3] = traficSensorInfo[i];
         }
+        printTrafficMap();
+    }
+
+    //Get Functions:
+    public int getSight(){
+        return sensesAvailability.sight;
+    }
+    public int getHearing(){
+        return sensesAvailability.hearing;
+    }
+    public int getHaptics(){
+        return sensesAvailability.haptics;
+    }
+    public double getFrictionCoefficient(){
+        return  frictionCoefficient;
+    }
+    public int getTimeToSituationalAwareness(){
+        return timeToSituationalAwareness;
+    }
+    public void printTrafficMap(){
         System.out.println( trafficMap[0][0] + " " + trafficMap[0][1] + " " + trafficMap[0][2]);
         System.out.println( trafficMap[1][0] + " " + trafficMap[1][1] + " " + trafficMap[1][2]);
         System.out.println( trafficMap[2][0] + " " + trafficMap[2][1] + " " + trafficMap[2][2]);
     }
+
+    // Adjust Situational parameters Functions.
     public void reduceSightAvailability(int value){
         sensesAvailability.sight = sensesAvailability.sight - value;
         if(sensesAvailability.sight < 0){

@@ -1,5 +1,6 @@
 
 {	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(°ĞµÆùÿÿÿÿ8ô¢¢¶/
+]	java:S125"<This block of commented-out lines of code should be removed.(ĞõÄúÿÿÿÿÿ8™Ò¡ˆº/
+b	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(·š†‡
 n
 java:S1223"LRename this method to prevent any misunderstanding or make it a constructor.(Ööİóúÿÿÿÿ8Úó ¢¶/
-b	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(·š†‡

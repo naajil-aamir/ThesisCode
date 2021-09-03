@@ -8,5 +8,6 @@ public class sensorData {
     public Boolean[] trafficSensorInfo;
     public String humanActivity;
     public int noiseLevels;
+    public String driverExperience;
 }
 

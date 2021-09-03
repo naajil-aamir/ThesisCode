@@ -9,6 +9,8 @@ public class main {
         sensorInputs allSensorsRawData = new sensorInputs();
         sensorData currentSensorValues = allSensorsRawData.readAllSensors();
         situationModel obj = new situationModel(currentSensorValues);
-        obj.execteRule();
+        ruleEngine engine = new ruleEngine();
+        engine.execteRule(obj);
+        //obj.execteRule();
     }
 }

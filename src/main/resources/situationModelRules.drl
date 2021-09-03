@@ -1,0 +1,45 @@
+import org.TOC.Naajil.situationModel
+
+rule "Rule For Rainy Weather"
+	when
+		situationObject: situationModel( weatherConditions == "Rainy")
+	then
+		situationObject.reduceFrictionCoefficient(0.1);
+	end
+
+rule "Rule For Sunny Weather"
+	when
+		situationObject: situationModel( weatherConditions == "Sunny")
+	then
+		situationObject.reduceFrictionCoefficient(0.0);
+	end
+
+rule "Rule For Snowy Weather"
+	when
+		situationObject: situationModel( weatherConditions == "Snow")
+	then
+		situationObject.reduceFrictionCoefficient(0.3);
+	end
+
+rule "Rule For Foggy Weather"
+	when
+		situationObject: situationModel( weatherConditions == "Fog")
+	then
+		situationObject.reduceFrictionCoefficient(0.1);
+		situationObject.reduceSightAvailability(10);
+	end
+
+rule "Rule for Human Activity: Using Phone"
+	when
+		situationObject: situationModel( humanActivity == "Phone")
+	then
+		situationObject.reduceSightAvailability(20);
+		situationObject.reduceHapticAvailability(40);
+	end
+
+rule "Rule for High Noise environment"
+	when
+		situationObject: situationModel( noiseLevels > 80)
+	then
+		situationObject.reduceHearingAvailability(20);
+	end
