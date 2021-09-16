@@ -113,3 +113,31 @@ rule "Rule for Low Experience Drivers"
 	then
 		situationObject.addTimeToSituationalAwareness(2);
 	end
+
+rule "Rule for Low Stressed Drivers"
+	when
+		situationObject: situationModel( humanStressLevel == "Low")
+	then
+		situationObject.addTimeToSituationalAwareness(0);
+	end
+
+rule "Rule for Medium Stressed Drivers"
+	when
+		situationObject: situationModel( humanStressLevel == "Medium")
+	then
+		situationObject.addTimeToSituationalAwareness(1);
+	end
+
+rule "Rule for High Stressed Drivers"
+	when
+		situationObject: situationModel( humanStressLevel == "High")
+	then
+		situationObject.addTimeToSituationalAwareness(2);
+	end
+
+rule "Rule for Very High Stressed Drivers"
+	when
+		situationObject: situationModel( humanStressLevel == "VeryHigh")
+	then
+		situationObject.addTimeToSituationalAwareness(3);
+	end

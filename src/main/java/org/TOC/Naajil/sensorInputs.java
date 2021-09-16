@@ -17,6 +17,7 @@ public class sensorInputs {
         sensorDataValues.noiseLevels = getNoiseLevelsDB();
         sensorDataValues.driverExperience = getDriverExperience();
         sensorDataValues.angleOfIncline = getAngleOfIncline();
+        sensorDataValues.humanStressLevel = getHumanStressLevel();
         return(sensorDataValues);
     }
 
@@ -55,6 +56,9 @@ public class sensorInputs {
     //Get the incline angle
     private int getAngleOfIncline(){
         return 0;
+    }
+    private String getHumanStressLevel(){
+        return "Low";
     }
     //Get the current noise levels.
     private int getNoiseLevelsDB(){
