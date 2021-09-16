@@ -16,6 +16,7 @@ public class sensorInputs {
         sensorDataValues.humanActivity = getHumanActivity();
         sensorDataValues.noiseLevels = getNoiseLevelsDB();
         sensorDataValues.driverExperience = getDriverExperience();
+        sensorDataValues.angleOfIncline = getAngleOfIncline();
         return(sensorDataValues);
     }
 
@@ -31,7 +32,7 @@ public class sensorInputs {
 
     //Get current weather conditions.
     private String getWeatherConditions(){
-        return "Fog";
+        return "Snow";
     }
 
     //Get current traffic intensity.
@@ -51,6 +52,10 @@ public class sensorInputs {
         return "Sleep";
     }
 
+    //Get the incline angle
+    private int getAngleOfIncline(){
+        return 0;
+    }
     //Get the current noise levels.
     private int getNoiseLevelsDB(){
         return 81;

@@ -20,7 +20,7 @@ rule "Rule For Snowy Weather"
 	when
 		situationObject: situationModel( weatherConditions == "Snow")
 	then
-		situationObject.reduceFrictionCoefficient(0.3);
+		situationObject.reduceFrictionCoefficient(0.45);
 	end
 
 rule "Rule For Foggy Weather"
@@ -29,6 +29,14 @@ rule "Rule For Foggy Weather"
 	then
 		situationObject.reduceFrictionCoefficient(0.1);
 		situationObject.reduceSightAvailability(10);
+	end
+
+rule "Rule For ThunderStorm Weather"
+	when
+		situationObject: situationModel( weatherConditions == "Thunderstorm")
+	then
+		situationObject.reduceFrictionCoefficient(0.2);
+		situationObject.reduceSightAvailability(30);
 	end
 
 //Rules regarding human activity

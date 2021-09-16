@@ -9,5 +9,6 @@ public class sensorData {
     public String humanActivity;
     public int noiseLevels;
     public String driverExperience;
+    public int angleOfIncline;
 }
 
