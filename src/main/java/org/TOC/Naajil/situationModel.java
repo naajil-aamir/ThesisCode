@@ -12,6 +12,8 @@ public class situationModel {
     public String humanActivity;
     public int noiseLevels;
     public String driverExperience;
+    public String humanStressLevel;
+    public int angleOfIncline;
     situationModel(){};
     situationModel(sensorData currentSensorValues){
         sensesAvailability.sight = 100;
@@ -27,6 +29,8 @@ public class situationModel {
         noiseLevels = currentSensorValues.noiseLevels;
         trafficIntensity = currentSensorValues.trafficIntensity;
         driverExperience = currentSensorValues.driverExperience;
+        humanStressLevel = currentSensorValues.humanStressLevel;
+        angleOfIncline = currentSensorValues.angleOfIncline;
     }
     private void createTrafficMap(Boolean[] traficSensorInfo){
         trafficMap = new Boolean[3][3];
