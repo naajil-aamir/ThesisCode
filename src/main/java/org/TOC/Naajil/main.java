@@ -11,6 +11,5 @@ public class main {
         situationModel obj = new situationModel(currentSensorValues);
         ruleEngine engine = new ruleEngine();
         engine.execteRule(obj);
-        //obj.execteRule();
     }
 }

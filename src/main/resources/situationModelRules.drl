@@ -1,5 +1,7 @@
 import org.TOC.Naajil.situationModel
 
+
+// Rules for Weather:
 rule "Rule For Rainy Weather"
 	when
 		situationObject: situationModel( weatherConditions == "Rainy")
@@ -29,17 +31,77 @@ rule "Rule For Foggy Weather"
 		situationObject.reduceSightAvailability(10);
 	end
 
+//Rules regarding human activity
 rule "Rule for Human Activity: Using Phone"
 	when
 		situationObject: situationModel( humanActivity == "Phone")
 	then
-		situationObject.reduceSightAvailability(20);
-		situationObject.reduceHapticAvailability(40);
+		situationObject.reduceSightAvailability(50);
+		situationObject.reduceHapticAvailability(50);
 	end
 
+rule "Rule for Human Activity: Music"
+	when
+		situationObject: situationModel( humanActivity == "Music")
+	then
+		situationObject.reduceHearingAvailability(20);
+	end
+
+rule "Rule for Human Activity: Calling"
+	when
+		situationObject: situationModel( humanActivity == "Call")
+	then
+		situationObject.reduceHearingAvailability(40);
+		situationObject.reduceSightAvailability(10);
+		situationObject.reduceHapticAvailability(30);
+	end
+
+rule "Rule for Human Activity: Watching a video"
+	when
+		situationObject: situationModel( humanActivity == "Video")
+	then
+		situationObject.reduceHearingAvailability(50);
+		situationObject.reduceSightAvailability(80);
+		situationObject.reduceHapticAvailability(60);
+	end
+
+rule "Rule for Human Activity: Sleeping"
+	when
+		situationObject: situationModel( humanActivity == "Sleep")
+	then
+		situationObject.reduceHearingAvailability(50);
+		situationObject.reduceSightAvailability(90);
+		situationObject.reduceHapticAvailability(70);
+	end
+
+rule "Rule for Human Activity: Smoking"
+	when
+		situationObject: situationModel( humanActivity == "Smoking")
+	then
+		situationObject.reduceHearingAvailability(0);
+		situationObject.reduceSightAvailability(10);
+		situationObject.reduceHapticAvailability(20);
+	end
+
+rule "Rule for Human Activity: Talking to Passengers"
+	when
+		situationObject: situationModel( humanActivity == "Conversing")
+	then
+		situationObject.reduceHearingAvailability(30);
+		situationObject.reduceSightAvailability(10);
+	end
+
+
+// Rules based on environment dynamics and miscellaneous topics
 rule "Rule for High Noise environment"
 	when
 		situationObject: situationModel( noiseLevels > 80)
 	then
 		situationObject.reduceHearingAvailability(20);
+	end
+rule "Rule for Low Experience Drivers"
+	when
+		situationObject: situationModel( driverExperience == "Low")
+	then
+		situationObject.addTimeToSituationalAwareness(2);
 	end

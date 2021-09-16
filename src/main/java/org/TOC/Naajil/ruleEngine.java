@@ -27,12 +27,10 @@ public class ruleEngine {
 
         workingMemory.insert(model);
         workingMemory.fireAllRules();
-        System.out.println("The adjusted friction values are: " + model.getFrictionCoefficient());
-        System.out.println("The adjusted Sight values are: " + model.getSight());
-        System.out.println("The adjusted Hearing values are: " + model.getHearing());
-        System.out.println("The adjusted Haptic values are: " + model.getHaptics());
-        System.out.println("The current traffic map is: ");
+
+        model.printSensorandCarDynamics();
         model.printTrafficMap();
+        model.printAdjustedValues();
 
         
     }

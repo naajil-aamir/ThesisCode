@@ -45,10 +45,10 @@ public class sensorInputs {
         currentSensorInfo[4] = true;
         return (currentSensorInfo);
     }
-    private String getDriverExperience(){ return "High"; }
+    private String getDriverExperience(){ return "Low"; }
     //Get the current human activity.
     private String getHumanActivity(){
-        return "Phone";
+        return "Sleep";
     }
 
     //Get the current noise levels.

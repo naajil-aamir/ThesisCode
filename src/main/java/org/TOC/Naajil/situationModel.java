@@ -1,16 +1,5 @@
 package org.TOC.Naajil;
 
-import org.drools.compiler.compiler.DroolsParserException;
-import org.drools.compiler.compiler.PackageBuilder;
-import org.drools.core.RuleBase;
-import org.drools.core.RuleBaseFactory;
-import org.drools.core.WorkingMemory;
-
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.io.Reader;
-
 public class situationModel {
     public humanSenses sensesAvailability = new humanSenses();
     public double frictionCoefficient;
@@ -22,6 +11,7 @@ public class situationModel {
     public String trafficIntensity;
     public String humanActivity;
     public int noiseLevels;
+    public String driverExperience;
     situationModel(){};
     situationModel(sensorData currentSensorValues){
         sensesAvailability.sight = 100;
@@ -36,13 +26,13 @@ public class situationModel {
         humanActivity = currentSensorValues.humanActivity;
         noiseLevels = currentSensorValues.noiseLevels;
         trafficIntensity = currentSensorValues.trafficIntensity;
+        driverExperience = currentSensorValues.driverExperience;
     }
     private void createTrafficMap(Boolean[] traficSensorInfo){
         trafficMap = new Boolean[3][3];
         for(int i=0; i< traficSensorInfo.length;i++){
             trafficMap[i/3][i%3] = traficSensorInfo[i];
         }
-        printTrafficMap();
     }
 
     //Get Functions:
@@ -61,10 +51,37 @@ public class situationModel {
     public int getTimeToSituationalAwareness(){
         return timeToSituationalAwareness;
     }
+    public void printSensorandCarDynamics(){
+        System.out.println("=====================================");
+        System.out.println("Sensor and Car dynamics");
+        System.out.println("=====================================");
+        System.out.println("Speed: " + speed);
+        System.out.println("Weather Conditions: " + weatherConditions);
+        System.out.println("Human Activity: " + humanActivity);
+        System.out.println("Driver Experience: " + driverExperience);
+        System.out.println("Noise Levels: " + noiseLevels);
+        System.out.println("Distance to Obstacle: " + distanceToObstacle);
+        System.out.println("Traffic Intensity: " + trafficIntensity);
+        System.out.println();
+    }
     public void printTrafficMap(){
+        System.out.println("=====================================");
+        System.out.println("Traffic Map");
+        System.out.println("=====================================");
         System.out.println( trafficMap[0][0] + " " + trafficMap[0][1] + " " + trafficMap[0][2]);
         System.out.println( trafficMap[1][0] + " " + trafficMap[1][1] + " " + trafficMap[1][2]);
         System.out.println( trafficMap[2][0] + " " + trafficMap[2][1] + " " + trafficMap[2][2]);
+        System.out.println();
+    }
+    public void printAdjustedValues(){
+        System.out.println("=====================================");
+        System.out.println("ADJUSTED VALUES");
+        System.out.println("=====================================");
+        System.out.println("The adjusted friction coefficient is: " + getFrictionCoefficient());
+        System.out.println("The adjusted Sight values are: " + getSight());
+        System.out.println("The adjusted Hearing values are: " + getHearing());
+        System.out.println("The adjusted Haptic values are: " + getHaptics());
+        System.out.println("The adjusted Time to situational awareness is: " + getTimeToSituationalAwareness() + "s");
     }
 
     // Adjust Situational parameters Functions.
@@ -96,28 +113,6 @@ public class situationModel {
         public int sight;
         public int hearing;
         public int haptics;
-    }
-
-    public void execteRule() throws DroolsParserException, IOException {
-        PackageBuilder builder = new PackageBuilder();
-        String ruleFile = "/offers.drl";
-        InputStream resourceAsStream = getClass().getResourceAsStream(ruleFile);
-
-        Reader ruleReader = new InputStreamReader(resourceAsStream);
-        builder.addPackageFromDrl(ruleReader);
-        org.drools.core.rule.Package rulePackage = builder.getPackage();
-        RuleBase ruleBase = RuleBaseFactory.newRuleBase();
-        ruleBase.addPackage(rulePackage);
-
-        WorkingMemory workingMemory = ruleBase.newStatefulSession();
-
-        PaymentOffer paymentOffer = new PaymentOffer();
-        paymentOffer.setChannel("paytm");
-        workingMemory.insert(paymentOffer);
-        workingMemory.fireAllRules();
-
-        System.out.println("The cashback for this payment channel "+paymentOffer.getChannel()+" is "+paymentOffer.getDiscount());
-
     }
 }
 
