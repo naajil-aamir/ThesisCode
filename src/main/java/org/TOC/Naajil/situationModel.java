@@ -113,10 +113,5 @@ public class situationModel {
     public void addTimeToSituationalAwareness(int value){
         timeToSituationalAwareness = timeToSituationalAwareness + value;
     }
-    public class humanSenses{
-        public int sight;
-        public int hearing;
-        public int haptics;
-    }
 }
 

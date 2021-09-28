@@ -1,17 +1,21 @@
 
-[
-java:S3400""9Remove this method and declare a constant for this value.(­¨Úøÿÿÿÿ8Ú–§¢¶/
-V
-java:S3400"9Remove this method and declare a constant for this value.(î¶ñ—8Ú–§¢¶/
-[
-java:S3400'"9Remove this method and declare a constant for this value.(÷©Æöùÿÿÿÿ8Ú–§¢¶/
 t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(°ĞµÆùÿÿÿÿ
+V
+java:S3400"9Remove this method and declare a constant for this value.(½Ñÿß8Ú–§¢¶/
 g	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(½¯Ô¸üÿÿÿÿ
 V
-java:S34003"9Remove this method and declare a constant for this value.(‰Â˜Ğ8Ú–§¢¶/
+java:S3400@"9Remove this method and declare a constant for this value.(ÊÚÙ8‘€ˆı¾/
+[
+java:S34006"9Remove this method and declare a constant for this value.(¡ó„—ÿÿÿÿÿ8Ú–§¢¶/
 V
-java:S3400"9Remove this method and declare a constant for this value.(½Ñÿß8Ú–§¢¶/
+java:S3400E"9Remove this method and declare a constant for this value.(¼ËÑÏ8Ú–§¢¶/
 V
-java:S34008"9Remove this method and declare a constant for this value.(¼ËÑÏ8Ú–§¢¶/
+java:S3400"9Remove this method and declare a constant for this value.(î¶ñ—8Ú–§¢¶/
+U
+java:S3400$"9Remove this method and declare a constant for this value.(ïãÆ28Ú–§¢¶/
+[
+java:S3400)"9Remove this method and declare a constant for this value.(÷©Æöùÿÿÿÿ8Ú–§¢¶/
 V
-java:S34000"9Remove this method and declare a constant for this value.(£’Íï8ˆÚÁÜº/
+java:S34002"9Remove this method and declare a constant for this value.(£’Íï8ˆÚÁÜº/
+V
+java:S3400;"9Remove this method and declare a constant for this value.(”·³›8¾¾–ÇÀ/

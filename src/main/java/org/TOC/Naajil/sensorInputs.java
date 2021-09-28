@@ -33,7 +33,7 @@ public class sensorInputs {
 
     //Get current weather conditions.
     private String getWeatherConditions(){
-        return "Snow";
+        return "Sunny";
     }
 
     //Get current traffic intensity.
@@ -48,6 +48,7 @@ public class sensorInputs {
         return (currentSensorInfo);
     }
     private String getDriverExperience(){ return "Low"; }
+
     //Get the current human activity.
     private String getHumanActivity(){
         return "Sleep";
@@ -57,9 +58,12 @@ public class sensorInputs {
     private int getAngleOfIncline(){
         return 0;
     }
+
+    //Get human stress level
     private String getHumanStressLevel(){
         return "Low";
     }
+
     //Get the current noise levels.
     private int getNoiseLevelsDB(){
         return 81;
