@@ -15,9 +15,9 @@ public class main {
         mainDecisionModel mainDecisionModelInstance = new mainDecisionModel(obj);
         System.out.println("Distance to Stop is: " + mainDecisionModelInstance.calculateTotalDistanceToStop() + "m");
         System.out.println("Time to stop is: " + mainDecisionModelInstance.calculateSafeTakeoverTime() + "s");
+        System.out.println("The preferred Action is: " + mainDecisionModelInstance.predictPreferredAction());
 
-
-        //Driver code to test predicting modality
+//        Driver code to test predicting modality
 //        Random r = new Random();
 //        for(int i=0; i < 10; i++){
 //            int randomInt1 = r.nextInt(100) + 1;

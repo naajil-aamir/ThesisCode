@@ -11,13 +11,15 @@ public class mainDecisionModel {
     public int distanceToObstacle;
     //public String weatherConditions;
     public String trafficIntensity;
+    public String trafficHandedness;
     //public String humanActivity;
     public int noiseLevels;
     //public String driverExperience;
     //public String humanStressLevel;
     public String informingModality[] = new String[3]; //[Visual, Auditory, Haptics]
     public double angleOfIncline;
-
+    private double totalDistanceToStop = 0;
+    private double totalTimeToStop = 0;
     //--- CONSTRUCTOR ---//
     public mainDecisionModel(situationModel currentSituation){
         sensesAvailability = currentSituation.sensesAvailability;
@@ -28,13 +30,73 @@ public class mainDecisionModel {
         distanceToObstacle = currentSituation.distanceToObstacle;
         trafficIntensity = currentSituation.trafficIntensity;
         angleOfIncline = convertDegreesToRadians(currentSituation.angleOfIncline);
+        trafficHandedness = currentSituation.trafficHandedness;
+        calculateSafeTakeoverTime();
+        calculateTotalDistanceToStop();
     }
 
+
+    //--- returns Total safe time required for the TOC
     public double calculateSafeTakeoverTime(){
-        double totalTimeToStop = 0;
         totalTimeToStop = timeToSituationalAwareness + timeToStopAfterBraking();
         return totalTimeToStop;
     }
+    //--- returns Total distance to stop including the distance travelled while situational awareness is gained. ---//
+    public double calculateTotalDistanceToStop(){
+        totalDistanceToStop = distanceBeforeSituationalAwareness() + distanceToStopAfterBraking();
+        return totalDistanceToStop;
+    }
+
+    public String predictPreferredAction(){
+        System.out.println("=====================================");
+        System.out.println("Traffic Map");
+        System.out.println("=====================================");
+        System.out.println( trafficMap[0][0] + " " + trafficMap[0][1] + " " + trafficMap[0][2]);
+        System.out.println( trafficMap[1][0] + " " + trafficMap[1][1] + " " + trafficMap[1][2]);
+        System.out.println( trafficMap[2][0] + " " + trafficMap[2][1] + " " + trafficMap[2][2]);
+        System.out.println(trafficHandedness);
+        if(totalDistanceToStop < distanceToObstacle && trafficMap[2][1] == false){
+            return "Brake";
+        }
+        if (totalDistanceToStop < distanceToObstacle && trafficMap[2][1] == true) {
+            if(trafficHandedness == "RHT") {
+                if(trafficMap[0][1] == false && trafficMap[0][0] == false){
+                    return "Swerve Left";
+                }
+                if(trafficMap[0][2] == false && trafficMap [1][2] == false && trafficMap[2][2] == false){
+                    return "Swerve Right";
+                }
+                return "Brake";
+            }
+            if(trafficHandedness == "LHT"){
+                if(trafficMap[0][2] == false && trafficMap[1][2] == false){
+                    return "Swerve Right";
+                }
+                if(trafficMap[0][0] == false && trafficMap[0][1] == false && trafficMap[2][1] == false){
+                    return "Swerve Left";
+                }
+                return "Brake";
+            }
+        }
+        if(trafficHandedness == "RHT") {
+            if(trafficMap[0][1] == false && trafficMap[0][0] == false){
+                return "Swerve Left";
+            }
+            if(trafficMap[0][2] == false && trafficMap [1][2] == false){
+                return "Swerve Right";
+            }
+        }
+        if(trafficHandedness == "LHT"){
+            if(trafficMap[0][2] == false && trafficMap[1][2] == false){
+                return "Swerve Right";
+            }
+            if(trafficMap[0][0] == false && trafficMap[0][1] == false){
+                return "Swerve Left";
+            }
+        }
+        return "";
+    }
+
     //--- Predicts the best possible mode of informing the user based on senses availability ---//
     public String[] predictInformingLowModality(){
           String visualFeedback = "low";
@@ -188,12 +250,7 @@ public class mainDecisionModel {
         return informingModality;
     }
 
-    //--- returns Total distance to stop including the distance travelled while situational awareness is gained. ---//
-    public double calculateTotalDistanceToStop(){
-        double totalDistanceToStop = 0;
-        totalDistanceToStop = distanceBeforeSituationalAwareness() + distanceToStopAfterBraking();
-        return totalDistanceToStop;
-    }
+
 
     //--- Converts the angle of incline from degrees (provided by the car) to radians ---//
     private double convertDegreesToRadians(int angleOfIncline){

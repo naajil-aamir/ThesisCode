@@ -18,6 +18,7 @@ public class sensorInputs {
         sensorDataValues.driverExperience = getDriverExperience();
         sensorDataValues.angleOfIncline = getAngleOfIncline();
         sensorDataValues.humanStressLevel = getHumanStressLevel();
+        sensorDataValues.trafficHandedness = getTrafficHandedness();
         return(sensorDataValues);
     }
 
@@ -44,6 +45,9 @@ public class sensorInputs {
     //Get the sensor Info, based on the free spaces around the car. Position 4 is the car itself.
     private Boolean[] getTrafficSensorInfo(){
         Boolean [] currentSensorInfo = new Boolean[9];
+        for(int i=0; i < currentSensorInfo.length; i++){
+            currentSensorInfo[i] = false;
+        }
         currentSensorInfo[4] = true;
         return (currentSensorInfo);
     }
@@ -56,14 +60,16 @@ public class sensorInputs {
 
     //Get the incline angle
     private int getAngleOfIncline(){
-        return 0;
+        return -10;
     }
 
     //Get human stress level
     private String getHumanStressLevel(){
         return "Low";
     }
-
+    private String getTrafficHandedness(){
+        return "RHT";
+    }
     //Get the current noise levels.
     private int getNoiseLevelsDB(){
         return 81;
