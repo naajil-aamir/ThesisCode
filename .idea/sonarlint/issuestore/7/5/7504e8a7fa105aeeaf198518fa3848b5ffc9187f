@@ -1,23 +1,23 @@
 
-g	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(½¯Ô¸üÿÿÿÿ
-[
-java:S34009"9Remove this method and declare a constant for this value.(¡ó„—ÿÿÿÿÿ8Ú–§¢¶/
 U
-java:S3400$"9Remove this method and declare a constant for this value.(ïãÆ28Ú–§¢¶/
-[
-java:S1144E"9Remove this unused private "getTrafficHandedness" method.(ÄïÚğùÿÿÿÿ8¬Şª„Å/
-V
-java:S3400F"9Remove this method and declare a constant for this value.(Ÿ·öî8æıª„Å/
+java:S3400%"9Remove this method and declare a constant for this value.(ïãÆ28Ú–§¢¶/
 t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(°ĞµÆùÿÿÿÿ
 V
-java:S3400C"9Remove this method and declare a constant for this value.(ÊÚÙ8‘€ˆı¾/
+java:S3400D"9Remove this method and declare a constant for this value.(ÊÚÙ8‘€ˆı¾/
 V
-java:S3400J"9Remove this method and declare a constant for this value.(¼ËÑÏ8Ú–§¢¶/
+java:S34006"9Remove this method and declare a constant for this value.(£’Íï8ˆÚÁÜº/
 V
-java:S3400"9Remove this method and declare a constant for this value.(½Ñÿß8Ú–§¢¶/
+java:S3400K"9Remove this method and declare a constant for this value.(¼ËÑÏ8Ú–§¢¶/
 V
-java:S34005"9Remove this method and declare a constant for this value.(£’Íï8ˆÚÁÜº/
+java:S3400?"9Remove this method and declare a constant for this value.(”·³›8‚ÖÑÆ/
+g	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(½¯Ô¸üÿÿÿÿ
+V
+java:S3400 "9Remove this method and declare a constant for this value.(î¶ñ—8Ú–§¢¶/
+V
+java:S3400"9Remove this method and declare a constant for this value.(½Ñÿß8Ú–§¢¶/
 [
-java:S3400)"9Remove this method and declare a constant for this value.(÷©Æöùÿÿÿÿ8Ú–§¢¶/
+java:S3400:"9Remove this method and declare a constant for this value.(¡ó„—ÿÿÿÿÿ8Ú–§¢¶/
 V
-java:S3400"9Remove this method and declare a constant for this value.(î¶ñ—8Ú–§¢¶/
+java:S3400G"9Remove this method and declare a constant for this value.(Ÿ·öî8æıª„Å/
+[
+java:S3400*"9Remove this method and declare a constant for this value.(÷©Æöùÿÿÿÿ8Ú–§¢¶/

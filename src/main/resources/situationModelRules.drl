@@ -55,12 +55,61 @@ rule "Rule for Human Activity: Music"
 		situationObject.reduceHearingAvailability(20);
 	end
 
+rule "Rule for Human Activity: Watching out the window"
+	when
+		situationObject: situationModel( humanActivity == "SightSeeing")
+	then
+		situationObject.reduceSightAvailability(35);
+	end
+
+rule "Rule for Human Activity: Texting"
+	when
+		situationObject: situationModel( humanActivity == "Texting")
+	then
+		situationObject.reduceSightAvailability(60);
+		situationObject.reduceHapticAvailability(50);
+	end
+
 rule "Rule for Human Activity: Calling"
 	when
 		situationObject: situationModel( humanActivity == "Call")
 	then
 		situationObject.reduceHearingAvailability(40);
 		situationObject.reduceSightAvailability(10);
+		situationObject.reduceHapticAvailability(30);
+	end
+
+rule "Rule for Human Activity: Using the Internet"
+	when
+		situationObject: situationModel( humanActivity == "Internet")
+	then
+		situationObject.reduceHearingAvailability(30);
+		situationObject.reduceSightAvailability(50);
+		situationObject.reduceHapticAvailability(30);
+	end
+
+rule "Rule for Human Activity: Eating"
+	when
+		situationObject: situationModel( humanActivity == "Eating")
+	then
+		situationObject.reduceSightAvailability(30);
+		situationObject.reduceHapticAvailability(30);
+	end
+
+rule "Rule for Human Activity: Reading"
+	when
+		situationObject: situationModel( humanActivity == "Reading")
+	then
+		situationObject.reduceSightAvailability(50);
+		situationObject.reduceHapticAvailability(25);
+	end
+
+rule "Rule for Human Activity: Using Social Media"
+	when
+		situationObject: situationModel( humanActivity == "SocialMedia")
+	then
+		situationObject.reduceHearingAvailability(20);
+		situationObject.reduceSightAvailability(60);
 		situationObject.reduceHapticAvailability(30);
 	end
 

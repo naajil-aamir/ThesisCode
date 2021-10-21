@@ -88,6 +88,7 @@ public class situationModel {
         System.out.println("The adjusted Hearing values are: " + getHearing());
         System.out.println("The adjusted Haptic values are: " + getHaptics());
         System.out.println("The adjusted Time to situational awareness is: " + getTimeToSituationalAwareness() + "s");
+        System.out.println();
     }
 
     // Adjust Situational parameters Functions.

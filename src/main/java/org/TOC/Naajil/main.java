@@ -13,10 +13,10 @@ public class main {
         ruleEngine engine = new ruleEngine();
         engine.execteRule(obj);
         mainDecisionModel mainDecisionModelInstance = new mainDecisionModel(obj);
-        System.out.println("Distance to Stop is: " + mainDecisionModelInstance.calculateTotalDistanceToStop() + "m");
-        System.out.println("Time to stop is: " + mainDecisionModelInstance.calculateSafeTakeoverTime() + "s");
-        System.out.println("The preferred Action is: " + mainDecisionModelInstance.predictPreferredAction());
-
+        mainDecisionModelInstance.printMainDecisionModelOutput();
+//        System.out.println("Distance to Stop is: " + mainDecisionModelInstance.totalDistanceToStop + "m");
+//        System.out.println("The preferred Action is: " + mainDecisionModelInstance.preferredAction);
+//        System.out.println("The safe takeover time for this scenario is: " + mainDecisionModelInstance.totalSafeTakeoverTime);
 //        Driver code to test predicting modality
 //        Random r = new Random();
 //        for(int i=0; i < 10; i++){

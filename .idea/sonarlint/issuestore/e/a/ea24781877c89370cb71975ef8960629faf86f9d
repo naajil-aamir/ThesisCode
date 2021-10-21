@@ -1,4 +1,5 @@
 
+i	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(¡â”Ó8›¬ºœ¿/
 u
 java:S1104"SMake haptics a static final constant or non-public and provide accessors if needed.(åœÁÈýÿÿÿÿ8¹Ž»œ¿/
 u
@@ -6,4 +7,3 @@ java:S1104"SMake hearing a static final constant or non-public and provide acc
 t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(°ÐµÆùÿÿÿÿ
 s
 java:S1104"QMake sight a static final constant or non-public and provide accessors if needed.(ÕÎ¸çÿÿÿÿÿ8¹Ž»œ¿/
-i	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(¡â”Ó8›¬ºœ¿/

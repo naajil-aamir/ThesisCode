@@ -55,12 +55,12 @@ public class sensorInputs {
 
     //Get the current human activity.
     private String getHumanActivity(){
-        return "Sleep";
+        return "Smoking";
     }
 
-    //Get the incline angle
+    //Get the incline angle in degrees
     private int getAngleOfIncline(){
-        return -10;
+        return 0;
     }
 
     //Get human stress level

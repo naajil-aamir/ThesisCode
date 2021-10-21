@@ -1,26 +1,26 @@
 
-y
-java:S1104"\Make trafficIntensity a static final constant or non-public and provide accessors if needed.(­ŒÎá8”–¦¢¶/
-i	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(™Ùø½8¾Û¥¢¶/
-t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(°ĞµÆùÿÿÿÿ
-{
-java:S1104"^Make distanceToObstacle a static final constant or non-public and provide accessors if needed.(ÖÙÛå8”–¦¢¶/
 |
 java:S1104"ZMake angleOfIncline a static final constant or non-public and provide accessors if needed.(»Ì™úÿÿÿÿ8½Óü¾/
+
+java:S1104"]Make trafficSensorInfo a static final constant or non-public and provide accessors if needed.(ª¨‚Âşÿÿÿÿ8”–¦¢¶/
+i	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(™Ùø½8¾Û¥¢¶/
+{
+java:S1104"^Make distanceToObstacle a static final constant or non-public and provide accessors if needed.(ÖÙÛå8”–¦¢¶/
+s
+java:S1104"QMake speed a static final constant or non-public and provide accessors if needed.(¥ğ‡ğøÿÿÿÿ8”–¦¢¶/
 y
-java:S1104"\Make humanStressLevel a static final constant or non-public and provide accessors if needed.(²¤íÉ8¸š†ı¾/
+java:S1104"\Make trafficIntensity a static final constant or non-public and provide accessors if needed.(­ŒÎá8”–¦¢¶/
 ~
 java:S1104"\Make driverExperience a static final constant or non-public and provide accessors if needed.(ƒ´†Øıÿÿÿÿ8Æ’»Üº/
 {
 java:S1104	"YMake humanActivity a static final constant or non-public and provide accessors if needed.(œ¹Í¤úÿÿÿÿ8”–¦¢¶/
 y
-java:S1104
-"WMake noiseLevels a static final constant or non-public and provide accessors if needed.(®×µıûÿÿÿÿ8”–¦¢¶/
-s
-java:S1104"QMake speed a static final constant or non-public and provide accessors if needed.(¥ğ‡ğøÿÿÿÿ8”–¦¢¶/
-
-java:S1104"]Make trafficSensorInfo a static final constant or non-public and provide accessors if needed.(ª¨‚Âşÿÿÿÿ8”–¦¢¶/
-z
-java:S1104"]Make weatherConditions a static final constant or non-public and provide accessors if needed.(Ù²–›8”–¦¢¶/
+java:S1104"\Make humanStressLevel a static final constant or non-public and provide accessors if needed.(²¤íÉ8¸š†ı¾/
 z
 java:S1104"]Make trafficHandedness a static final constant or non-public and provide accessors if needed.(˜®±8¸ÿ—„Å/
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(°ĞµÆùÿÿÿÿ
+y
+java:S1104
+"WMake noiseLevels a static final constant or non-public and provide accessors if needed.(®×µıûÿÿÿÿ8”–¦¢¶/
+z
+java:S1104"]Make weatherConditions a static final constant or non-public and provide accessors if needed.(Ù²–›8”–¦¢¶/
