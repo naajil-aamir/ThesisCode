@@ -20,6 +20,7 @@ public class situationModel {
         sensesAvailability.sight = 100;
         sensesAvailability.hearing = 100;
         sensesAvailability.haptics = 100;
+        sensesAvailability.cognitiveLoad = 0;
         frictionCoefficient = 0.6;
         timeToSituationalAwareness = 6;
         createTrafficMap(currentSensorValues.trafficSensorInfo);
@@ -110,11 +111,18 @@ public class situationModel {
             sensesAvailability.haptics = 0;
         }
     }
+    public void increaseCognitiveLoad(int value){
+        sensesAvailability.cognitiveLoad = sensesAvailability.cognitiveLoad + value;
+        if(sensesAvailability.haptics >= 100){
+            sensesAvailability.haptics = 100;
+        }
+    }
     public void reduceFrictionCoefficient(double value){
         frictionCoefficient = frictionCoefficient - value;
     }
     public void addTimeToSituationalAwareness(int value){
         timeToSituationalAwareness = timeToSituationalAwareness + value;
     }
+
 }
 
