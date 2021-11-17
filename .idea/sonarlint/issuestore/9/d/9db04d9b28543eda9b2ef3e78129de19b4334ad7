@@ -1,121 +1,140 @@
 
-L
-java:S5411L"*Use the primitive boolean expression here.(æÊùÿÿÿÿ8¶Äñ†Å/
-L
-java:S54119"*Use the primitive boolean expression here.(æÊùÿÿÿÿ8¾´—…Å/
-j
-java:S1192="MDefine a constant instead of duplicating this literal "Swerve Right" 4 times.(İ¶ÚÇ8¶Äñ†Å/
-h
-java:S11925"FDefine a constant instead of duplicating this literal "Brake" 3 times.(ÜÜ¡”şÿÿÿÿ8¬“ß†Å/
+X	java:S125"<This block of commented-out lines of code should be removed.(æÏ¡â8ùëÎœ¿/
+T	java:S1062"9Replace this use of System.out or System.err by a logger.(ğÿp8Ï¹—›Ê/
 ]	java:S125"<This block of commented-out lines of code should be removed.(ù­çíûÿÿÿÿ8Ã¬Îœ¿/
-L
-java:S5411T"*Use the primitive boolean expression here.(Í§¬åÿÿÿÿÿ8¶Äñ†Å/
-G
-java:S5411<"*Use the primitive boolean expression here.(Õù°8…¨†Å/
-L
-java:S5411B"*Use the primitive boolean expression here.(Í§¬åÿÿÿÿÿ8í©Í†Å/
-z
-java:S1104"]Make trafficHandedness a static final constant or non-public and provide accessors if needed.(˜®±8Åğ„Å/
-{
-java:S1450"^Remove the "totalTimeToStop" field and declare it as a local variable in the relevant methods.(„÷8ÊŸ·Å/
-v
-java:S1104"ZMake angleOfIncline a static final constant or non-public and provide accessors if needed.(¥îë~8×Ó±œ¿/
-K
-java:S11259")Remove the literal "false" boolean value.(æÊùÿÿÿÿ8¾´—…Å/
-K
-java:S1125B")Remove the literal "false" boolean value.(Í§¬åÿÿÿÿÿ8í©Í†Å/
+^
+java:S1117©";Rename "speedMS" which hides the field declared at line 10.(ÅùÏ’øÿÿÿÿ8®Ãæœ¿/
+Z	java:S106/"9Replace this use of System.out or System.err by a logger.(˜¿„Şûÿÿÿÿ8¦¥›Ê/
+g	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ºßî€ıÿÿÿÿ
 F
-java:S1125<")Remove the literal "false" boolean value.(Õù°8í©Í†Å/
-O
-java:S1128"-Remove this unused import 'java.util.Arrays'.(î–˜Éüÿÿÿÿ8ÉÏ†æÂ/
-V
-java:S4973K"9Use the "equals" method if value comparison was intended.(‘ŞµÑ8¶Äñ†Å/
-X	java:S125"<This block of commented-out lines of code should be removed.(¿õ±€8¹ÑÏœ¿/
-t
-java:S37763"RRefactor this method to reduce its Cognitive Complexity from 38 to the 15 allowed.(‹²Û¹ÿÿÿÿÿ8öÉ¸†Å/
-K
-java:S1125W")Remove the literal "false" boolean value.(ˆã®¶ıÿÿÿÿ8¶Äñ†Å/
+java:S1125c")Remove the literal "false" boolean value.(ƒÊ‘²8‘“Ş†Å/
+k
+java:S1871É"MThis branch's code block is the same as the block for the branch on line 193.(á¢–¬8™¶‹éÂ/
+L
+java:S5411U"*Use the primitive boolean expression here.(°Ùòøÿÿÿÿ8Ù›·†Å/
+L
+java:S5411j"*Use the primitive boolean expression here.(æÊùÿÿÿÿ8¶Äñ†Å/
 x
 java:S1104	"VMake trafficMap a static final constant or non-public and provide accessors if needed.(Øğ¦ßÿÿÿÿÿ8×Ó±œ¿/
-K
-java:S1125L")Remove the literal "false" boolean value.(æÊùÿÿÿÿ8¶Äñ†Å/
-X	java:S125"<This block of commented-out lines of code should be removed.(æÏ¡â8ùëÎœ¿/
-K
-java:S1125T")Remove the literal "false" boolean value.(Í§¬åÿÿÿÿÿ8¶Äñ†Å/
-F
-java:S1125E")Remove the literal "false" boolean value.(ƒÊ‘²8‘“Ş†Å/
-s
-java:S1128"QRemove this unnecessary import: java.lang classes are always implicitly imported.(Š‘…ûıÿÿÿÿ8½¤”¿/
-V
-java:S49738"9Use the "equals" method if value comparison was intended.(‘ŞµÑ8–Ä‹…Å/
-y
-java:S1104"\Make trafficIntensity a static final constant or non-public and provide accessors if needed.(­ŒÎá8×Ó±œ¿/
-K
-java:S1125O")Remove the literal "false" boolean value.(Í§¬åÿÿÿÿÿ8¶Äñ†Å/
-k
-java:S1871 "MThis branch's code block is the same as the block for the branch on line 152.(á¢–¬8™¶‹éÂ/
-G
-java:S5411E"*Use the primitive boolean expression here.(ƒÊ‘²8‘“Ş†Å/
-€
-java:S1104"^Make sensesAvailability a static final constant or non-public and provide accessors if needed.(òÿìğüÿÿÿÿ8×Ó±œ¿/
-ˆ
-java:S1104"fMake timeToSituationalAwareness a static final constant or non-public and provide accessors if needed.(Ğ¸òúÿÿÿÿ8×Ó±œ¿/
-L
-java:S54114"*Use the primitive boolean expression here.(®İ½Àûÿÿÿÿ8ÊÈ€‚Å/
-F
-java:S1125<")Remove the literal "false" boolean value.(Õù°8…¨†Å/
-K
-java:S1125T")Remove the literal "false" boolean value.(Í§¬åÿÿÿÿÿ8¶Äñ†Å/
-L
-java:S5411O"*Use the primitive boolean expression here.(Í§¬åÿÿÿÿÿ8¶Äñ†Å/
-K
-java:S11254")Remove the literal "false" boolean value.(®İ½Àûÿÿÿÿ8ÊÈ€‚Å/
-K
-java:S1125O")Remove the literal "false" boolean value.(Í§¬åÿÿÿÿÿ8¶Äñ†Å/
-n
-java:S1192:"LDefine a constant instead of duplicating this literal "Swerve Left" 4 times.(™•»üÿÿÿÿ8¶Äñ†Å/
-L
-java:S5411W"*Use the primitive boolean expression here.(ˆã®¶ıÿÿÿÿ8¶Äñ†Å/
-k
-java:S2184€"HCast one of the operands of this multiplication operation to a "double".(ÅùÏ’øÿÿÿÿ8—»åœ¿/
-J
-java:S11257"(Remove the literal "true" boolean value.(°Ùòøÿÿÿÿ8Ù›·†Å/
-^
-java:S1117€";Rename "speedMS" which hides the field declared at line 10.(ÅùÏ’øÿÿÿÿ8®Ãæœ¿/
-K
-java:S11259")Remove the literal "false" boolean value.(æÊùÿÿÿÿ8¾´—…Å/
-F
-java:S1125E")Remove the literal "false" boolean value.(ƒÊ‘²8‘“Ş†Å/
-L
-java:S54117"*Use the primitive boolean expression here.(°Ùòøÿÿÿÿ8Ù›·†Å/
 y
 java:S1104"WMake noiseLevels a static final constant or non-public and provide accessors if needed.(®×µıûÿÿÿÿ8×Ó±œ¿/
+V
+java:S4973?"9Use the "equals" method if value comparison was intended.(ô¨ç8¼¬¡˜Ê/
+[
+java:S49733"9Use the "equals" method if value comparison was intended.(Âœ÷Ãüÿÿÿÿ8Ñğœ›Ê/
+V
+java:S4973_"9Use the "equals" method if value comparison was intended.(‹éƒ¼8öÉ¸†Å/
+s
+java:S1128"QRemove this unnecessary import: java.lang classes are always implicitly imported.(Š‘…ûıÿÿÿÿ8½¤”¿/
+y
+java:S1104"\Make trafficIntensity a static final constant or non-public and provide accessors if needed.(­ŒÎá8×Ó±œ¿/
+L
+java:S5411`"*Use the primitive boolean expression here.(Í§¬åÿÿÿÿÿ8í©Í†Å/
 Z
 java:S1197"8Move the array designator from the variable to the type.(ö›úÃÿÿÿÿÿ8®Ú—ËÀ/
+G
+java:S5411c"*Use the primitive boolean expression here.(ƒÊ‘²8‘“Ş†Å/
+K
+java:S1125R")Remove the literal "false" boolean value.(®İ½Àûÿÿÿÿ8ÊÈ€‚Å/
 F
-java:S1125<")Remove the literal "false" boolean value.(Õù°8…¨†Å/
-F
-java:S1125E")Remove the literal "false" boolean value.(ƒÊ‘²8‘“Ş†Å/
-K
-java:S1125B")Remove the literal "false" boolean value.(Í§¬åÿÿÿÿÿ8í©Í†Å/
-k
-java:S1871ì"MThis branch's code block is the same as the block for the branch on line 228.(á¢–¬8Şç¨èÂ/
-K
-java:S1125W")Remove the literal "false" boolean value.(ˆã®¶ıÿÿÿÿ8¶Äñ†Å/
-V
-java:S4973A"9Use the "equals" method if value comparison was intended.(‹éƒ¼8öÉ¸†Å/
-
-java:S1104"]Make informingModality a static final constant or non-public and provide accessors if needed.(ö›úÃÿÿÿÿÿ8®Ú—ËÀ/
-K
-java:S1125L")Remove the literal "false" boolean value.(æÊùÿÿÿÿ8¶Äñ†Å/
-g	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ºßî€ıÿÿÿÿ
-t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(°ĞµÆùÿÿÿÿ
+java:S1125Z")Remove the literal "false" boolean value.(Õù°8í©Í†Å/
 u
 java:S1104
 "SMake speedMS a static final constant or non-public and provide accessors if needed.(±Ÿ‹ úÿÿÿÿ8®Ãæœ¿/
+K
+java:S1125m")Remove the literal "false" boolean value.(Í§¬åÿÿÿÿÿ8¶Äñ†Å/
+K
+java:S1125u")Remove the literal "false" boolean value.(ˆã®¶ıÿÿÿÿ8¶Äñ†Å/
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(°ĞµÆùÿÿÿÿ
+~
+java:S1104"aMake totalSafeTakeoverTime a static final constant or non-public and provide accessors if needed.(ã…ïş8Òè™Ê/
+K
+java:S1125r")Remove the literal "false" boolean value.(Í§¬åÿÿÿÿÿ8¶Äñ†Å/
+n
+java:S1192X"LDefine a constant instead of duplicating this literal "Swerve Left" 4 times.(™•»üÿÿÿÿ8¶Äñ†Å/
+K
+java:S1125u")Remove the literal "false" boolean value.(ˆã®¶ıÿÿÿÿ8¶Äñ†Å/
+j
+java:S1192["MDefine a constant instead of duplicating this literal "Swerve Right" 4 times.(İ¶ÚÇ8¶Äñ†Å/
+L
+java:S5411r"*Use the primitive boolean expression here.(Í§¬åÿÿÿÿÿ8¶Äñ†Å/
+U	java:S1064"9Replace this use of System.out or System.err by a logger.(ĞÒ‘£8Û•›Ê/
+J
+java:S1125U"(Remove the literal "true" boolean value.(°Ùòøÿÿÿÿ8Ù›·†Å/
+O
+java:S1128"-Remove this unused import 'java.util.Arrays'.(î–˜Éüÿÿÿÿ8ÉÏ†æÂ/
+k
+java:S1871•"MThis branch's code block is the same as the block for the branch on line 269.(á¢–¬8Şç¨èÂ/
 V
-java:S4973S"9Use the "equals" method if value comparison was intended.(‹éƒ¼8¶Äñ†Å/
-
-java:S1104"_Make frictionCoefficient a static final constant or non-public and provide accessors if needed.(ò¹Ã—úÿÿÿÿ8×Ó±œ¿/
+java:S4973i"9Use the "equals" method if value comparison was intended.(‘ŞµÑ8¶Äñ†Å/
+K
+java:S1125W")Remove the literal "false" boolean value.(æÊùÿÿÿÿ8¾´—…Å/
+Z	java:S1068"9Replace this use of System.out or System.err by a logger.(²ìâÄûÿÿÿÿ8çÉ¡›Ê/
+K
+java:S1125m")Remove the literal "false" boolean value.(Í§¬åÿÿÿÿÿ8¶Äñ†Å/
+V
+java:S4973q"9Use the "equals" method if value comparison was intended.(‹éƒ¼8¶Äñ†Å/
+F
+java:S1125Z")Remove the literal "false" boolean value.(Õù°8…¨†Å/
+F
+java:S1125c")Remove the literal "false" boolean value.(ƒÊ‘²8‘“Ş†Å/
+X	java:S125"<This block of commented-out lines of code should be removed.(¿õ±€8¹ÑÏœ¿/
+U	java:S1061"9Replace this use of System.out or System.err by a logger.(¿Œ£°8¦¥›Ê/
+ˆ
+java:S1104"fMake timeToSituationalAwareness a static final constant or non-public and provide accessors if needed.(Ğ¸òúÿÿÿÿ8×Ó±œ¿/
+t
+java:S3776Q"RRefactor this method to reduce its Cognitive Complexity from 38 to the 15 allowed.(‹²Û¹ÿÿÿÿÿ8öÉ¸†Å/
+Z	java:S1065"9Replace this use of System.out or System.err by a logger.(òÊÏÎÿÿÿÿÿ8Û•›Ê/
+L
+java:S5411m"*Use the primitive boolean expression here.(Í§¬åÿÿÿÿÿ8¶Äñ†Å/
 {
 java:S1104"^Make distanceToObstacle a static final constant or non-public and provide accessors if needed.(ÖÙÛå8×Ó±œ¿/
+K
+java:S1125`")Remove the literal "false" boolean value.(Í§¬åÿÿÿÿÿ8í©Í†Å/
+z
+java:S1104"]Make trafficHandedness a static final constant or non-public and provide accessors if needed.(˜®±8Åğ„Å/
+K
+java:S1125W")Remove the literal "false" boolean value.(æÊùÿÿÿÿ8¾´—…Å/
+]	java:S125#"<This block of commented-out lines of code should be removed.(‰òÇšşÿÿÿÿ8‚º‘˜Ê/
+k
+java:S2184©"HCast one of the operands of this multiplication operation to a "double".(ÅùÏ’øÿÿÿÿ8—»åœ¿/
+{
+java:S1104"_Make totalDistanceToStop a static final constant or non-public and provide accessors if needed.(ä’Á8æ«­™Ê/
+L
+java:S5411W"*Use the primitive boolean expression here.(æÊùÿÿÿÿ8¾´—…Å/
+U	java:S106."9Replace this use of System.out or System.err by a logger.(±„òá8¦¥›Ê/
+
+java:S1104"_Make frictionCoefficient a static final constant or non-public and provide accessors if needed.(ò¹Ã—úÿÿÿÿ8×Ó±œ¿/
+L
+java:S5411R"*Use the primitive boolean expression here.(®İ½Àûÿÿÿÿ8ÊÈ€‚Å/
+K
+java:S1125j")Remove the literal "false" boolean value.(æÊùÿÿÿÿ8¶Äñ†Å/
+x
+java:S1104"[Make preferredAction a static final constant or non-public and provide accessors if needed.(˜©êÚ8¼¬¡˜Ê/
+L
+java:S5411u"*Use the primitive boolean expression here.(ˆã®¶ıÿÿÿÿ8¶Äñ†Å/
+€
+java:S1104"^Make sensesAvailability a static final constant or non-public and provide accessors if needed.(òÿìğüÿÿÿÿ8×Ó±œ¿/
+F
+java:S1125Z")Remove the literal "false" boolean value.(Õù°8…¨†Å/
+K
+java:S1125j")Remove the literal "false" boolean value.(æÊùÿÿÿÿ8¶Äñ†Å/
+v
+java:S1104"ZMake angleOfIncline a static final constant or non-public and provide accessors if needed.(¥îë~8×Ó±œ¿/
+G
+java:S5411Z"*Use the primitive boolean expression here.(Õù°8…¨†Å/
+V
+java:S4973?"9Use the "equals" method if value comparison was intended.(ô¨ç8¼¬¡˜Ê/
+c
+java:S1192?"FDefine a constant instead of duplicating this literal "Brake" 4 times.(ô¨ç8¬“ß†Å/
+
+java:S1104"]Make informingModality a static final constant or non-public and provide accessors if needed.(ö›úÃÿÿÿÿÿ8®Ú—ËÀ/
+V
+java:S4973V"9Use the "equals" method if value comparison was intended.(‘ŞµÑ8–Ä‹…Å/
+K
+java:S1125`")Remove the literal "false" boolean value.(Í§¬åÿÿÿÿÿ8í©Í†Å/
+U	java:S1060"9Replace this use of System.out or System.err by a logger.(±„òá8¦¥›Ê/
+F
+java:S1125c")Remove the literal "false" boolean value.(ƒÊ‘²8‘“Ş†Å/
+K
+java:S1125r")Remove the literal "false" boolean value.(Í§¬åÿÿÿÿÿ8¶Äñ†Å/

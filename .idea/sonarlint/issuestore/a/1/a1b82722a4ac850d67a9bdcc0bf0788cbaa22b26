@@ -1,62 +1,63 @@
 
-Z	java:S106D"9Replace this use of System.out or System.err by a logger.(‡¼ß ÿÿÿÿÿ8¶Îİº/
-s
-java:S1104"QMake speed a static final constant or non-public and provide accessors if needed.(¥ğ‡ğøÿÿÿÿ8Ÿ§…Œº/
-Z	java:S106Y"9Replace this use of System.out or System.err by a logger.(‡·ùÿÿÿÿ8ó˜İº/
-x
-java:S1104"VMake trafficMap a static final constant or non-public and provide accessors if needed.(Øğ¦ßÿÿÿÿÿ8Ÿ§…Œº/
-Z	java:S106P"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ8âª–İº/
-U	java:S106V"9Replace this use of System.out or System.err by a logger.(øÔÌª8ó˜İº/
-ˆ
-java:S1104"fMake timeToSituationalAwareness a static final constant or non-public and provide accessors if needed.(Ğ¸òúÿÿÿÿ8Ÿ§…Œº/
-Z	java:S106G"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ8Ò¤•İº/
-U	java:S106T"9Replace this use of System.out or System.err by a logger.(ñØŒ¦8ó˜İº/
-z
-java:S1104"]Make trafficHandedness a static final constant or non-public and provide accessors if needed.(˜®±8Çâï„Å/
-U	java:S106E"9Replace this use of System.out or System.err by a logger.(Çå´İ8Ö©“İº/
-ƒ
-java:S1192="fDefine a constant instead of duplicating this literal "=====================================" 6 times.(±„òá8²è•İº/
-|
-java:S1104"ZMake angleOfIncline a static final constant or non-public and provide accessors if needed.(»Ì™úÿÿÿÿ8“¬”ı¾/
-Z	java:S106C"9Replace this use of System.out or System.err by a logger.(çÏŸùùÿÿÿÿ8¶Îİº/
-U	java:S106L"9Replace this use of System.out or System.err by a logger.(±„òá8²è•İº/
-y
-java:S1104"WMake noiseLevels a static final constant or non-public and provide accessors if needed.(®×µıûÿÿÿÿ8Ÿ§…Œº/
-U	java:S106M"9Replace this use of System.out or System.err by a logger.(ê£îã8‰ûÜº/
-y
-java:S1104"\Make trafficIntensity a static final constant or non-public and provide accessors if needed.(­ŒÎá8Ÿ§…Œº/
-U	java:S106J"9Replace this use of System.out or System.err by a logger.(±„òá8²è•İº/
-Z	java:S106A"9Replace this use of System.out or System.err by a logger.(Ö—Ë»şÿÿÿÿ8½°Œİº/
-Z	java:S106X"9Replace this use of System.out or System.err by a logger.(Œæ˜÷úÿÿÿÿ8ó˜İº/
-U	java:S106Z"9Replace this use of System.out or System.err by a logger.(°å‡„8ó˜İº/
-Z	java:S106@"9Replace this use of System.out or System.err by a logger.(¢­Ò¡ıÿÿÿÿ8”Šİº/
-U	java:S106="9Replace this use of System.out or System.err by a logger.(±„òá8‘şˆİº/
-Z	java:S106O"9Replace this use of System.out or System.err by a logger.( â—•şÿÿÿÿ8íÑÅÜº/
-U	java:S106W"9Replace this use of System.out or System.err by a logger.(çé²8ó˜İº/
-U	java:S106F"9Replace this use of System.out or System.err by a logger.(ö©„8ù—”İº/
-U	java:S106S"9Replace this use of System.out or System.err by a logger.(±„òá8ó˜İº/
-€
-java:S1104"^Make sensesAvailability a static final constant or non-public and provide accessors if needed.(òÿìğüÿÿÿÿ8Ÿ§…Œº/
-Z	java:S106>"9Replace this use of System.out or System.err by a logger.(‹½Ë¹ıÿÿÿÿ8‘şˆİº/
-y
-java:S1104"\Make humanStressLevel a static final constant or non-public and provide accessors if needed.(²¤íÉ8¬È“ı¾/
-U	java:S106K"9Replace this use of System.out or System.err by a logger.(Ü³æû8²è•İº/
-
-java:S1104"_Make frictionCoefficient a static final constant or non-public and provide accessors if needed.(ò¹Ã—úÿÿÿÿ8Ÿ§…Œº/
 ~
 java:S1104"\Make driverExperience a static final constant or non-public and provide accessors if needed.(ƒ´†Øıÿÿÿÿ8ö¿ÅÜº/
->
-java:S1116"Remove this empty statement.(¥›Ó¤ùÿÿÿÿ8ÿ€æˆº/
-U	java:S106?"9Replace this use of System.out or System.err by a logger.(±„òá8‘şˆİº/
-U	java:S106U"9Replace this use of System.out or System.err by a logger.(±„òá8ó˜İº/
-{
-java:S1104"YMake humanActivity a static final constant or non-public and provide accessors if needed.(œ¹Í¤úÿÿÿÿ8Ÿ§…Œº/
+U	java:S106N"9Replace this use of System.out or System.err by a logger.(ê£îã8‰ûÜº/
+U	java:S106>"9Replace this use of System.out or System.err by a logger.(±„òá8‘şˆİº/
+ˆ
+java:S1104"fMake timeToSituationalAwareness a static final constant or non-public and provide accessors if needed.(Ğ¸òúÿÿÿÿ8Ÿ§…Œº/
+
+java:S1104"_Make frictionCoefficient a static final constant or non-public and provide accessors if needed.(ò¹Ã—úÿÿÿÿ8Ÿ§…Œº/
+Z	java:S106Y"9Replace this use of System.out or System.err by a logger.(Œæ˜÷úÿÿÿÿ8ó˜İº/
+y
+java:S1104"WMake noiseLevels a static final constant or non-public and provide accessors if needed.(®×µıûÿÿÿÿ8Ÿ§…Œº/
+i	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ˆÙ€8È©¢¶/
+U	java:S106M"9Replace this use of System.out or System.err by a logger.(±„òá8²è•İº/
+Z	java:S106E"9Replace this use of System.out or System.err by a logger.(‡¼ß ÿÿÿÿÿ8¶Îİº/
 z
 java:S1104
 "]Make weatherConditions a static final constant or non-public and provide accessors if needed.(Ù²–›8¡Ï¡Šº/
-Z	java:S106N"9Replace this use of System.out or System.err by a logger.(½€²ùÿÿÿÿ8‰ûÜº/
-i	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ˆÙ€8È©¢¶/
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(°ĞµÆùÿÿÿÿ
+U	java:S106G"9Replace this use of System.out or System.err by a logger.(ö©„8ù—”İº/
+Z	java:S106Q"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ8âª–İº/
+U	java:S106@"9Replace this use of System.out or System.err by a logger.(±„òá8‘şˆİº/
+U	java:S106X"9Replace this use of System.out or System.err by a logger.(çé²8ó˜İº/
+U	java:S106U"9Replace this use of System.out or System.err by a logger.(ñØŒ¦8ó˜İº/
+U	java:S106F"9Replace this use of System.out or System.err by a logger.(Çå´İ8Ö©“İº/
+Z	java:S106\"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ8ÆåÊ›Ê/
+Z	java:S106C"9Replace this use of System.out or System.err by a logger.(´ıÊıÿÿÿÿ8“ôİº/
 {
 java:S1104	"^Make distanceToObstacle a static final constant or non-public and provide accessors if needed.(ÖÙÛå8Ÿ§…Œº/
-t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(°ĞµÆùÿÿÿÿ
-Z	java:S106B"9Replace this use of System.out or System.err by a logger.(´ıÊıÿÿÿÿ8“ôİº/
+>
+java:S1116"Remove this empty statement.(¥›Ó¤ùÿÿÿÿ8ÿ€æˆº/
+U	java:S106["9Replace this use of System.out or System.err by a logger.(°å‡„8ó˜İº/
+y
+java:S1104"\Make humanStressLevel a static final constant or non-public and provide accessors if needed.(²¤íÉ8¬È“ı¾/
+Z	java:S106H"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ8Ò¤•İº/
+U	java:S106V"9Replace this use of System.out or System.err by a logger.(±„òá8ó˜İº/
+z
+java:S1104"]Make trafficHandedness a static final constant or non-public and provide accessors if needed.(˜®±8Çâï„Å/
+{
+java:S1104"YMake humanActivity a static final constant or non-public and provide accessors if needed.(œ¹Í¤úÿÿÿÿ8Ÿ§…Œº/
+Z	java:S106A"9Replace this use of System.out or System.err by a logger.(¢­Ò¡ıÿÿÿÿ8”Šİº/
+Z	java:S106?"9Replace this use of System.out or System.err by a logger.(‹½Ë¹ıÿÿÿÿ8‘şˆİº/
+€
+java:S1104"^Make sensesAvailability a static final constant or non-public and provide accessors if needed.(òÿìğüÿÿÿÿ8Ÿ§…Œº/
+x
+java:S1104"VMake trafficMap a static final constant or non-public and provide accessors if needed.(Øğ¦ßÿÿÿÿÿ8Ÿ§…Œº/
+Z	java:S106O"9Replace this use of System.out or System.err by a logger.(½€²ùÿÿÿÿ8‰ûÜº/
+U	java:S106K"9Replace this use of System.out or System.err by a logger.(±„òá8²è•İº/
+U	java:S106L"9Replace this use of System.out or System.err by a logger.(Ü³æû8²è•İº/
+Z	java:S106B"9Replace this use of System.out or System.err by a logger.(Ö—Ë»şÿÿÿÿ8½°Œİº/
+|
+java:S1104"ZMake angleOfIncline a static final constant or non-public and provide accessors if needed.(»Ì™úÿÿÿÿ8“¬”ı¾/
+U	java:S106W"9Replace this use of System.out or System.err by a logger.(øÔÌª8ó˜İº/
+ƒ
+java:S1192>"fDefine a constant instead of duplicating this literal "=====================================" 6 times.(±„òá8²è•İº/
+U	java:S106T"9Replace this use of System.out or System.err by a logger.(±„òá8ó˜İº/
+y
+java:S1104"\Make trafficIntensity a static final constant or non-public and provide accessors if needed.(­ŒÎá8Ÿ§…Œº/
+Z	java:S106D"9Replace this use of System.out or System.err by a logger.(çÏŸùùÿÿÿÿ8¶Îİº/
+Z	java:S106P"9Replace this use of System.out or System.err by a logger.( â—•şÿÿÿÿ8íÑÅÜº/
+Z	java:S106Z"9Replace this use of System.out or System.err by a logger.(‡·ùÿÿÿÿ8ó˜İº/
+s
+java:S1104"QMake speed a static final constant or non-public and provide accessors if needed.(¥ğ‡ğøÿÿÿÿ8Ÿ§…Œº/

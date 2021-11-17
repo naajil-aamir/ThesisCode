@@ -1,9 +1,11 @@
 
+s
+java:S1104"QMake sight a static final constant or non-public and provide accessors if needed.(ÕÎ¸çÿÿÿÿÿ8¹»œ¿/
+{
+java:S1104"YMake cognitiveLoad a static final constant or non-public and provide accessors if needed.(ö½¶üÿÿÿÿ8¥‰Œ‡Î/
 i	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(¡â”Ó8›¬ºœ¿/
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(°ĞµÆùÿÿÿÿ
 u
 java:S1104"SMake haptics a static final constant or non-public and provide accessors if needed.(åœÁÈıÿÿÿÿ8¹»œ¿/
 u
 java:S1104"SMake hearing a static final constant or non-public and provide accessors if needed.(öš¢Õşÿÿÿÿ8¹»œ¿/
-t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(°ĞµÆùÿÿÿÿ
-s
-java:S1104"QMake sight a static final constant or non-public and provide accessors if needed.(ÕÎ¸çÿÿÿÿÿ8¹»œ¿/
