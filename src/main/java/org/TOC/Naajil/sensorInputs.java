@@ -2,7 +2,6 @@ package org.TOC.Naajil;
 
 public class sensorInputs {
     private sensorData sensorDataValues;
-
     public sensorInputs(){
         sensorDataValues = new sensorData();
     }
@@ -19,6 +18,7 @@ public class sensorInputs {
         sensorDataValues.angleOfIncline = getAngleOfIncline();
         sensorDataValues.humanStressLevel = getHumanStressLevel();
         sensorDataValues.trafficHandedness = getTrafficHandedness();
+        sensorDataValues.highCriticalSituation = false;
         return(sensorDataValues);
     }
 

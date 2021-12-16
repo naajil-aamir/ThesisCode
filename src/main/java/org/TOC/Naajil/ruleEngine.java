@@ -31,7 +31,5 @@ public class ruleEngine {
         model.printSensorandCarDynamics();
         model.printTrafficMap();
         model.printAdjustedValues();
-
-        
     }
 }

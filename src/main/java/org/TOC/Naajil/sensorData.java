@@ -12,5 +12,6 @@ public class sensorData {
     public int angleOfIncline;
     public String humanStressLevel;
     public String trafficHandedness;
+    public Boolean highCriticalSituation;
 }
 

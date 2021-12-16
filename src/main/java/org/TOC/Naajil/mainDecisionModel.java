@@ -1,6 +1,5 @@
 package org.TOC.Naajil;
 import java.lang.Math;
-import java.util.Arrays;
 
 public class mainDecisionModel {
     public humanSenses sensesAvailability = new humanSenses();
@@ -14,6 +13,7 @@ public class mainDecisionModel {
     public String trafficHandedness;
     //public String humanActivity;
     public int noiseLevels;
+    public boolean highCriticalSituation;
     //public String driverExperience;
     //public String humanStressLevel;
     public String informingModality[] = new String[3]; //[Visual, Auditory, Haptics]
@@ -21,6 +21,7 @@ public class mainDecisionModel {
     public String preferredAction = "";
     public double totalDistanceToStop = 0;
     public double totalSafeTakeoverTime = 0;
+    private situationModel storedSituation;
     //--- CONSTRUCTOR ---//
     public mainDecisionModel(situationModel currentSituation){
         sensesAvailability = currentSituation.sensesAvailability;
@@ -37,8 +38,9 @@ public class mainDecisionModel {
         preferredAction = predictPreferredAction();
         calculateSafeTakeoverTime();
         predictInformingHighModality();
-
-
+        storedSituation = currentSituation;
+        highCriticalSituation = currentSituation.highCriticalSituation;
+        setCriticalityLevel();
     }
 
     //--- Prints the output of the maindecision model ---//
@@ -56,7 +58,19 @@ public class mainDecisionModel {
             System.out.println("Safe takeover time with stopping: " + totalSafeTakeoverTime + "s");
         }
     }
-
+    //--- sets the criticality level when not provided by sensors. This is just a fallback function as criticality has to be provided by the sensors ---//
+    public void setCriticalityLevel(){
+        if(highCriticalSituation == false){
+            if(totalDistanceToStop > distanceToObstacle){
+                highCriticalSituation = true;
+                return;
+            }
+            if(trafficMap[2][1] == true){
+                highCriticalSituation = true;
+                return;
+            }
+        }
+    }
 
     //--- returns Total safe time required for the TOC ---//
     public double calculateSafeTakeoverTime(){

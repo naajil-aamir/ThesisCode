@@ -11,6 +11,7 @@ public class main {
         sensorData currentSensorValues = allSensorsRawData.readAllSensors();
         situationModel obj = new situationModel(currentSensorValues);
         ruleEngine engine = new ruleEngine();
+
         engine.execteRule(obj);
         mainDecisionModel mainDecisionModelInstance = new mainDecisionModel(obj);
         mainDecisionModelInstance.printMainDecisionModelOutput();

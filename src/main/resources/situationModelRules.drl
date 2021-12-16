@@ -1,6 +1,5 @@
 import org.TOC.Naajil.situationModel
 
-
 // Rules for Weather:
 rule "Rule For Rainy Weather"
 	when
@@ -189,4 +188,18 @@ rule "Rule for Very High Stressed Drivers"
 		situationObject: situationModel( humanStressLevel == "VeryHigh")
 	then
 		situationObject.addTimeToSituationalAwareness(3);
+	end
+
+rule "Rule for multipleValues"
+	when
+		situationObject: situationModel(checkCase("sleep"))
+	then
+	    situationObject.addTimeToSituationalAwareness(20);
+	end
+
+rule "Rule for multipleValues 2"
+	when
+		situationObject: situationModel(checkCase("play"))
+	then
+	    situationObject.setHighWayDriving(true);
 	end
